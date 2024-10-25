@@ -57,6 +57,12 @@ java -jar TextToKeyStrokes-1.0-SNAPSHOT.jar --robot|--jna [--file <filePath>] [-
    ```shell
    java -jar TextToKeyStrokes-1.0-SNAPSHOT.jar --jna --file path/to/input.txt --delay 50
    ```
+### Note on Keyboard Layout
+
+The `Robot` keystroke simulation is **keyboard layout-dependent**. This means that keystrokes are sent according to the system's current keyboard layout. If the target system uses a different keyboard layout than expected, the output might not match the intended characters.
+
+**Recommendation**: Ensure the keyboard layout is consistent on both the sending and receiving systems, or implement specific mappings in the code to support multiple layouts.
+
 
 ## Limitations
 - This application is limited by the speed of keystroke simulation, which can be slow for large amounts of data.
