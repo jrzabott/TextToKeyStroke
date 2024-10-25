@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+@Deprecated // Deprecated due to refactoring and removal of the JNAKeystroke class
 public class TextToKeyStroke {
 
     /**

@@ -4,6 +4,7 @@ import com.sun.jna.Native;
 import com.sun.jna.Library;
 import com.sun.jna.Pointer;
 
+@Deprecated // This class is deprecated and will be removed in a future release
 public class JNAKeystroke implements KeystrokeStrategy {
 
     private final int delay;
